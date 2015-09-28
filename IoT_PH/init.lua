@@ -2,7 +2,7 @@
 
 print("Connecting to Wi-Fi ")
 wifi.setmode(wifi.STATION)
-wifi.sta.config("KWHA-S8AP","7f7928b109")
+wifi.sta.config("WAP_ID","PASSWORD")
 wifi.sta.connect()
 tmr.alarm(1,1000,1,function() if wifi.sta.getip() == nil then
 	print("IP not received. Wait for it...") else
